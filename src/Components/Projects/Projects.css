@@ -1,0 +1,66 @@
+.pro-cont{
+    color: #FEf6E6 !important;
+    background-color: #242524 !important;
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+}
+.pro-title{
+    color: #ea8f10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro-para{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* @media (max-width: 576px) {
+    .pro-para{
+        font-size: 1.7rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+@media (max-width: 768px) and (min-width: 576px) {
+    .pro-para{
+        font-size: 2rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.pro-sub-title{
+    font-size: 2rem;
+    font-family: "DM Serif Display", serif;
+}
+.pro-main-title{
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+    display: flex;
+    justify-content: center;
+}
+.pro-main-para{
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif ;
+}
+@media (max-width: 570px) {
+    .pro-sub-img{
+        width: 380px !important;
+        margin-bottom: 25px;
+    }
+    .pro-para{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pro-main-title{
+        font-size: 1.5rem;
+        font-family: "DM Serif Display", serif;
+        display: flex;
+        justify-content: center;
+    }
+}

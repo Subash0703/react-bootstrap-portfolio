@@ -1,0 +1,98 @@
+.cont-det{
+    color: #FEf6E6 !important;
+    background-color: #242524 !important;
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+}
+.cont-det-head{
+    color: #ea8f10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-det-title{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 576px) {
+    .cont-det-title{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.cont-head-info{
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-para-info{
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif;
+}
+@media (max-width: 576px) {
+    .cont-img-temp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont-img{
+        width: 100% !important;
+        height: 40vh !important;
+    }
+    .social-info{
+        font-size: 1.5rem !important;
+        font-family: "DM Serif Display", serif;
+        letter-spacing: 6px;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .cont-img{
+        width: 100% !important;
+        height: 50vh !important;
+    }
+}
+.social-info{
+    font-size: 2rem;
+    font-family: "DM Serif Display", serif;
+    letter-spacing: 6px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-info-icon{
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: #242524 !important;
+}
+.cont-social-head{
+    font-size: 2rem;
+    font-family: "DM Serif Display", serif;
+}
+.cont-social-para{
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif;
+}
+.cont-img-temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-img{
+    object-fit: contain;
+    width: auto;
+    height: 80vh;
+}

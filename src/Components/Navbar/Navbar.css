@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.intro-nav{
+    font-family: "Roboto Flex", sans-serif;
+    background: #242524 !important;
+    padding: 3rem 1rem 5rem 1rem;
+
+}
+.intro-logo{
+    margin-top: 7px;
+    font-weight: 600;
+    color: #FEf6E6 !important;
+}
+.container{
+    display: flex;
+    
+}
+.resume{
+    padding: 10px;
+    color: black !important;
+}
+.navbar-brand{
+    font-size: 3rem;
+}

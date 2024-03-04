@@ -1,0 +1,49 @@
+.intro-line{
+    font-size: 3rem;
+    font-family: "DM Serif Display", serif;
+}
+.intro-cont{
+    background-color: #242524 !important;
+}
+.intro-desc{
+    text-align: justify;
+    padding: 8rem 2rem 4rem ;
+    color: #FEf6E6 !important;
+    
+}
+@media (max-width: 768px) {
+    .intro-line{
+        font-size: 2.2rem;
+    }
+    .media-pic{
+        width: 240px !important;
+        height: auto;
+    }
+}
+@media (max-width: 1200px)  {
+    .media-pic{
+        width: 320px !important;
+        height: auto;
+    }
+}
+@media (max-width: 576px) {
+    .intro-line{
+        font-size: 1.5rem;
+    }
+    .media-pic{
+        width: 250px !important;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.intro-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-pic{
+    filter:drop-shadow(10px 10px 40px rgba(247, 244, 244, 0.6)) ;
+    border-radius: 10px ;
+}

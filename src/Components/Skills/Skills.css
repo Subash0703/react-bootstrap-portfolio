@@ -1,0 +1,93 @@
+.skill-data{
+    color: #FEf6E6 !important;
+    background-color: #242524 !important;
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+}
+.skill-data-head{
+    color: #ea8f10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-data-title{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 576px) {
+    .skill-data-title{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill-det-head{
+        font-size: 2.5rem !important;
+    }
+    .skill-set-head-title{
+        font-size: 2.5rem !important;
+        
+    }
+}
+.skill-det{
+    color: #181818;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Serif Display", serif;
+}
+.skill-det-para{
+    text-align: justify;
+    color: #242525;
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif;
+}
+.skill-set-img{
+    width: 150px;
+    height: auto;
+}
+.skill-set{
+    font-family: "DM Serif Display", serif;
+}
+.skill-det-head{
+    font-size: 4rem;
+}
+.skill-set-head-title{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-course-head{
+    color: #181818;
+    font-size: 3rem;
+    font-family: "DM Serif Display", serif;
+}
+.skill-course-cont{
+    text-align: justify;
+    color: #242525;
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif;
+}
+@media (max-width: 570px) {
+    .skill-det-head{
+        font-size: 1.8rem !important;
+    }
+    .skill-det{
+        color: #181818;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "DM Serif Display", serif;
+    }
+    .skill-set-head-title{
+        font-size: 2.3rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

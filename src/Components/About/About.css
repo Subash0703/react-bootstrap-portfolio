@@ -1,0 +1,135 @@
+.intro-about{
+    color: #FEf6E6 !important;
+    background-color: #242524 !important;
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+}
+.about-head{
+    color: #ea8f10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-head-line{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 576px) {
+    .about-head-line{
+        font-size: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .about-img{
+        object-fit: contain;
+        width: 100%;
+        height: 100vh;
+    }
+}
+.about-detail{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 24px;
+    padding: 8px; */
+    font-family: "DM Serif Display", serif;
+}
+.about-det-line{
+    font-size: 3rem;
+}
+@media (max-width: 576px) {
+    .about-det-line{
+        font-size: 2rem;
+    }
+}
+.about-cont-det{
+    text-align: justify;
+    margin-top: 24px;
+    padding: 8px;
+    font-size: 1.6rem;
+    font-family: "Roboto Flex", sans-serif;
+}
+.about-cen-img{
+    display: flex;
+    justify-content: center;
+}
+.about-img{
+    object-fit: contain;
+    width: auto;
+    height: 90vh;
+}
+.about-values{
+    color: #181818;
+    font-family: "DM Serif Display", serif;
+    margin-bottom: 24px;
+}
+.about-cont-para1{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #242525;
+}
+.about-values-subtitle{
+    font-size: 1.8rem;
+    font-family: "DM Serif Display", serif;
+}
+.about-values-title{
+    font-size: 4rem;
+}
+@media (max-width: 576px) {
+    .about-values-title{
+        font-size: 2.5rem;
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+        width: 350px;
+        height: 300px;
+    }
+    .about-skill-short-head-title{
+        font-size: 2.5rem !important;
+        font-family: "DM Serif Display", serif;
+    }
+    .about-more-title{
+        font-size: 2.5rem !important;
+        font-family: "DM Serif Display", serif;
+    }
+    .about-skill-short-para{
+        text-align: justify;
+    }
+}
+.about-skill-short-head{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.5rem;
+    font-family: "DM Serif Display", serif;
+}
+.about-skill-short-para{
+    color: #242525;
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif;
+}
+.about-skill-short-head-title{
+    color: #181818;
+    font-size: 4rem;
+    font-family: "DM Serif Display", serif;
+}
+.about-more-title{
+    color: #181818;
+    font-size: 4rem;
+    font-family: "DM Serif Display", serif;
+}
+.about-more-para{
+    text-align: justify;
+    color: #242525;
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif;
+}
