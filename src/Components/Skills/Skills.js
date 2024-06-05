@@ -8,6 +8,10 @@ import bootstrap from "./bootstrap.png";
 import python from "./python.png";
 import django from "./django.png";
 import oracle from "./oracle.png";
+import tailwindcss from "./tailwindcss.png";
+import firebase from "./firebase.png";
+import git from "./git.png";
+import github from "./github.png";
 
 const Skills = () => {
   return (
@@ -59,13 +63,24 @@ const Skills = () => {
                 <h3 className="h3 skill-set-head-title">Technical Skills</h3>
               </div>
               <div className="row my-3">
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-left">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-left"
+                >
                   <img src={html} alt="html" className="skill-set-img" />
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-right" data-aos-delay="300">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-right"
+                  data-aos-delay="300"
+                >
                   <img src={css} alt="css" className="skill-set-img" />
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-left" data-aos-delay="400">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-left"
+                  data-aos-delay="400"
+                >
                   <img
                     src={bootstrap}
                     alt="bootstrap"
@@ -74,33 +89,115 @@ const Skills = () => {
                 </div>
               </div>
               <div className="row my-3">
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-right" data-aos-delay="500">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-right"
+                  data-aos-delay="500"
+                >
+                  <img
+                    src={tailwindcss}
+                    alt="tailwindcss"
+                    className="skill-set-img"
+                  />
+                </div>
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-right"
+                  data-aos-delay="500"
+                >
                   <img src={js} alt="js" className="skill-set-img" />
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-left" data-aos-delay="600">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-left"
+                  data-aos-delay="600"
+                >
                   <img src={react} alt="react" className="skill-set-img" />
-                </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-right" data-aos-delay="700">
-                  <img src={python} alt="python" className="skill-set-img" />
                 </div>
               </div>
               <div className="row my-3">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-left" data-aos-delay="800">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-right"
+                  data-aos-delay="700"
+                >
+                  <img src={python} alt="python" className="skill-set-img" />
+                </div>
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-left"
+                  data-aos-delay="800"
+                >
                   <img src={django} alt="django" className="skill-set-img" />
                 </div>
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center my-3" data-aos="flip-right" data-aos-delay="900">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-right"
+                  data-aos-delay="900"
+                >
                   <img src={oracle} alt="oracle" className="skill-set-img" />
+                </div>
+              </div>
+              <div className="row my-3">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-left"
+                  data-aos-delay="800"
+                >
+                  <img
+                    src={firebase}
+                    alt="firebase"
+                    className="skill-set-img"
+                  />
+                </div>
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-right"
+                  data-aos-delay="900"
+                >
+                  <img src={git} alt="git" className="skill-set-img" />
+                </div>
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  data-aos="flip-right"
+                  data-aos-delay="900"
+                >
+                  <img src={github} alt="github" className="skill-set-img" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="row pb-5" data-aos="fade-up">
-            <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-3">
+          <div className="row pb-5 mt-5" data-aos="fade-up">
+            <div className="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-3">
               <h3 className="h3 skill-course-head">Internship</h3>
             </div>
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-5 skill-course-cont">
-              I have completed an internship in Web Designing at DLK
-              Technologies, Chennai, from July 12, 2022, to August 12, 2022.
+              <ul>
+                <li className="mt-3" data-aos="fade-up">
+                  I completed a one-month internship in Web Design at DLK
+                  Technologies, Chennai. During this internship, I honed my
+                  skills in creating visually appealing and user-friendly
+                  websites. I gained hands-on experience in HTML, CSS, and
+                  Bootstrap, working on real-world projects and collaborating
+                  with a team of professionals. This opportunity allowed me to
+                  enhance my understanding of modern web design principles and
+                  best practices, further solidifying my passion for front-end
+                  development.
+                </li>
+                <li className="mt-5" data-aos="fade-up">
+                  Currently, I am interning as a Fullstack Developer at iNetz
+                  Technologies Pvt Ltd, Vadapalani, Chennai, for six months. In
+                  this role, I am working on a Learning Management System (LMS)
+                  project,My responsibilities include designing scalable
+                  server-side logic, integrating front-end elements, and
+                  managing database operations. I collaborate with the front-end
+                  team to ensure seamless user experiences and optimize the
+                  application for performance and security. This internship is
+                  providing me with valuable hands-on experience in full-stack
+                  development, enhancing my expertise in creating robust web
+                  applications.
+                </li>
+              </ul>
             </div>
           </div>
           <div className="row pb-5" data-aos="fade-up">

@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import image1 from "./photo-bg.png";
+// import image1 from "./photo-bg.png";
+import image2 from "./linkedin-profile.png";
 
 const About = () => {
   return (
@@ -8,10 +9,16 @@ const About = () => {
       <div className="container-fluid">
         <div className="intro-about row">
           <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
-            <h1 className="h1 about-head col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5" data-aos="fade-up">
+            <h1
+              className="h1 about-head col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5"
+              data-aos="fade-up"
+            >
               About
             </h1>
-            <div className="about-head-line col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
+            <div
+              className="about-head-line col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+              data-aos="fade-up"
+            >
               Hi, I'm Subash
             </div>
           </div>
@@ -19,7 +26,9 @@ const About = () => {
         <div className="row ">
           <div className="col-xxl-6 col-xl-6 col-lg-4 col-md-12 col-sm-12">
             <div className="about-detail">
-              <h3 className="h3 about-det-line" data-aos="fade-up">Full-Stack Developer</h3>
+              <h3 className="h3 about-det-line" data-aos="fade-up">
+                Full-Stack Developer
+              </h3>
             </div>
           </div>
           <div className="col-xxl-6 col-xl-6 col-lg-8 col-md-12 col-sm-12 pb-5">
@@ -38,7 +47,10 @@ const About = () => {
           </div>
           <div className="row pb-5">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
-              <h2 className="h2 about-skill-short-head-title" data-aos="fade-up">
+              <h2
+                className="h2 about-skill-short-head-title"
+                data-aos="fade-up"
+              >
                 Tech Stack Mastery
               </h2>
             </div>
@@ -92,31 +104,68 @@ const About = () => {
               appealing and mobile-friendly websites.
             </div>
           </div>
+          <div className="row pb-5" data-aos="fade-up">
+            <div className="col-xxl-6 col-xl-6 col-lg-8 col-md-12 col-sm-12 about-skill-short-head">
+              FIREBASE
+            </div>
+            <div className="col-xxl-6 col-xl-6 col-lg-8 col-md-12 col-sm-12 about-skill-short-para">
+              Leveraging Firebase, I develop real-time applications with
+              seamless user authentication, database management, and cloud
+              storage solutions.
+            </div>
+          </div>
+          <div className="row pb-5" data-aos="fade-up">
+            <div className="col-xxl-6 col-xl-6 col-lg-8 col-md-12 col-sm-12 about-skill-short-head">
+              GITHUB, BITBUCKET
+            </div>
+            <div className="col-xxl-6 col-xl-6 col-lg-8 col-md-12 col-sm-12 about-skill-short-para">
+              I utilize GitHub and Bitbucket for version control and
+              collaboration, efficiently managing code repositories, tracking
+              changes, and collaborating with other developers to ensure project
+              success and seamless project management.
+            </div>
+          </div>
+
           <div className="row pb-5">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5 about-cen-img">
-              <img className="about-img" src={image1} alt="aboutimg" data-aos="flip-left" data-aos-duration="3000"/>
+              <img
+                className="about-img"
+                src={image2}
+                alt="aboutimg"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+              />
             </div>
           </div>
           <div className="row pb-5" data-aos="fade-down">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 about-more-title">
               What Sets Me Apart ?
             </div>
-          <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 about-more-para">
-            In addition to my technical skills, what truly defines me is my
-            dedication to delivering high-quality solutions. I have a keen eye
-            for detail, a passion for problem-solving, and an unwavering
-            commitment to staying updated with the latest industry trends.
-          </div>
+            <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 about-more-para">
+              In addition to my technical skills, what truly defines me is my
+              dedication to delivering high-quality solutions. I have a keen eye
+              for detail, a passion for problem-solving, and an unwavering
+              commitment to staying updated with the latest industry trends.
+            </div>
           </div>
           <div className="row">
-            <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
-              <div className="about-values d-flex justify-content-center my-5" data-aos="fade-up">
+            <div
+              className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+              data-aos="fade-up"
+            >
+              <div
+                className="about-values d-flex justify-content-center my-5"
+                data-aos="fade-up"
+              >
                 <h2 className="h2 about-values-title mb-5">
                   My Values & Beliefs
                 </h2>
               </div>
               <div className="row pb-5">
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12"
+                  data-aos="fade-up"
+                >
                   <h5 className="h5 about-values-subtitle">
                     Continuous Learning
                   </h5>
@@ -127,7 +176,10 @@ const About = () => {
                     my work remains cutting-edge.
                   </p>
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12"
+                  data-aos="fade-up"
+                >
                   <h5 className="h5 about-values-subtitle">
                     User-Centric Approach
                   </h5>
@@ -137,7 +189,10 @@ const About = () => {
                     only meet but exceed user expectations is my constant goal.
                   </p>
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4" data-aos="fade-up">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4"
+                  data-aos="fade-up"
+                >
                   <h5 className="h5 about-values-subtitle">
                     Passion for Problem-Solving
                   </h5>
@@ -150,7 +205,10 @@ const About = () => {
                 </div>
               </div>
               <div className="row pb-5">
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12"
+                  data-aos="fade-up"
+                >
                   <h5 className="h5 about-values-subtitle">
                     Code Elegance and Efficiency
                   </h5>
@@ -161,7 +219,10 @@ const About = () => {
                     collaboration with fellow developers.
                   </p>
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12"
+                  data-aos="fade-up"
+                >
                   <h5 className="h5 about-values-subtitle">Adaptability</h5>
                   <p className="p about-cont-para1">
                     Technology is a dynamic realm, and adaptability is key. I
@@ -169,7 +230,10 @@ const About = () => {
                     change and leveraging it as an opportunity for growth.
                   </p>
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4" data-aos="fade-up">
+                <div
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4"
+                  data-aos="fade-up"
+                >
                   <h5 className="h5 about-values-subtitle">
                     Commitment to Quality
                   </h5>

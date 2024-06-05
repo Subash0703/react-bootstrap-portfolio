@@ -6,6 +6,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaCopyright } from "react-icons/fa";
 
 const Footer = () => {
+  const handleScroll = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <div className="bg-dark text-white p-4 foot-card">
@@ -30,17 +33,29 @@ const Footer = () => {
               <h5 className="h5 site-links">Site Links</h5>
               <ul className="list-unstyled ">
                 <li>
-                  <Link className="text-decoration-none foot-icon" to="/">
+                  <Link
+                    className="text-decoration-none foot-icon"
+                    to="/"
+                    onClick={handleScroll}
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-decoration-none foot-icon" to="/about">
+                  <Link
+                    className="text-decoration-none foot-icon"
+                    to="/about"
+                    onClick={handleScroll}
+                  >
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-decoration-none foot-icon" to="/skills">
+                  <Link
+                    className="text-decoration-none foot-icon"
+                    to="/skills"
+                    onClick={handleScroll}
+                  >
                     Skills
                   </Link>
                 </li>
@@ -48,6 +63,7 @@ const Footer = () => {
                   <Link
                     className="text-decoration-none foot-icon"
                     to="/projects"
+                    onClick={handleScroll}
                   >
                     Projects
                   </Link>
@@ -56,6 +72,7 @@ const Footer = () => {
                   <Link
                     className="text-decoration-none foot-icon"
                     to="/contact"
+                    onClick={handleScroll}
                   >
                     Contact
                   </Link>
@@ -100,12 +117,15 @@ const Footer = () => {
                 </form>
               </address>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 social-info" data-aos="fade-up">
+            <div
+              className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 social-info"
+              data-aos="fade-up"
+            >
               <div className="col-md-6 d-flex justify-content-space-evenly ">
                 <Link
                   className="social-icon text-decoration-none foot-icon"
                   target="_blank"
-                  to="https://www.linkedin.com/in/subash-s-805626273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  to="https://linkedin.com/in/subash-shenbagarajan"
                 >
                   {" "}
                   <FaLinkedin />
@@ -120,12 +140,18 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center res-btn" data-aos="fade-up">
-              <button className="btn btn-secondary "><Link
-                to="https://drive.google.com/file/d/1GyzcOywPkcGuR-f9FxDqgXYD7VluN6mw/view?usp=sharing"
-                target="_blank"
-                className="text-decoration-none res-foot-icon"
-              >"Click to Know Me Professionally"</Link>
+            <div
+              className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center res-btn"
+              data-aos="fade-up"
+            >
+              <button className="btn btn-secondary ">
+                <Link
+                  to="https://drive.google.com/file/d/1rOa-HcDJTPwz2ilUDcn6GG0m_AiGkquE/view?usp=sharing"
+                  target="_blank"
+                  className="text-decoration-none res-foot-icon"
+                >
+                  "Click to Know Me Professionally"
+                </Link>
               </button>
             </div>
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -134,7 +160,7 @@ const Footer = () => {
                 to="/"
               >
                 {" "}
-                <FaCopyright /> Copyright Subash 2024
+                <FaCopyright /> &nbsp; Copyright Subash 2024.
               </Link>
             </div>
           </div>
