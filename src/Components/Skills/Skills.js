@@ -33,7 +33,7 @@ const Skills = () => {
             Full-Stack Fusion
           </div>
         </div>
-        <div className="row mx-5 my-5">
+        <div className="row my-5">
           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div className="skill-det" data-aos="fade-up">
               <h3 className="h3 skill-det-head">Full-Stack Developer</h3>
@@ -206,7 +206,7 @@ const Skills = () => {
             </div>
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-5 skill-course-cont">
               I have completed a Python Full-Stack course at Greens Technologys,
-              Chennai, from June 2023 to January 2024.
+              Chennai.
             </div>
           </div>
         </div>
