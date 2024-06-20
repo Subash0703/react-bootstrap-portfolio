@@ -1,20 +1,20 @@
-.pro-cont{
-    color: #FEf6E6 !important;
-    background-color: #242524 !important;
-    font-size: 2.5rem;
-    font-family: "DM Serif Display", serif;
+.pro-cont {
+  color: #fef6e6 !important;
+  background-color: #242524 !important;
+  font-size: 2.5rem;
+  font-family: "DM Serif Display", serif;
 }
-.pro-title{
-    color: #ea8f10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.pro-title {
+  color: #ea8f10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pro-para{
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.pro-para {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* @media (max-width: 576px) {
     .pro-para{
@@ -25,45 +25,78 @@
     }
 } */
 @media (max-width: 768px) and (min-width: 576px) {
-    .pro-para{
-        font-size: 2rem !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .pro-para {
+    font-size: 2rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.pro-sub-title{
-    font-size: 2rem;
-    font-family: "DM Serif Display", serif;
+.pro-sub-title {
+  font-size: 2rem;
+  font-family: "DM Serif Display", serif;
 }
-.pro-main-title{
-    font-size: 2.5rem;
+.pro-main-title {
+  font-size: 2.5rem;
+  font-family: "DM Serif Display", serif;
+  display: flex;
+  justify-content: center;
+}
+.pro-main-para {
+  font-size: 1.5rem;
+  font-family: "Roboto Flex", sans-serif;
+}
+.pro-sub-span {
+  text-align: justify;
+}
+@media (max-width: 570px) {
+  .pro-sub-img {
+    width: 380px !important;
+    margin-bottom: 25px;
+  }
+  .pro-para {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pro-main-title {
+    font-size: 1.5rem;
     font-family: "DM Serif Display", serif;
     display: flex;
     justify-content: center;
+  }
 }
-.pro-main-para{
-    font-size: 1.5rem;
-    font-family: "Roboto Flex", sans-serif ;
-}
-.pro-sub-span{
-    text-align: justify;
-}
-@media (max-width: 570px) {
-    .pro-sub-img{
-        width: 380px !important;
-        margin-bottom: 25px;
-    }
-    .pro-para{
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .pro-main-title{
-        font-size: 1.5rem;
-        font-family: "DM Serif Display", serif;
-        display: flex;
-        justify-content: center;
-    }
-}
+
+.project-gallery {
+    position: relative;
+  }
+  
+  .project-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-gallery-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-gallery:hover .project-gallery-links {
+    opacity: 1;
+  }
+  
+  .preview-link {
+    color: white;
+    font-size: 2rem;
+  }
+  

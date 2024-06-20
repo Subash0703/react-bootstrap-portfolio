@@ -1,12 +1,13 @@
 import React from "react";
 import "./Projects.css";
-import draw from "./drawing.png";
+import draw from "./drawing-web-app.png";
 import joke from "./joke.png";
 import movie from "./movie.png";
 import textspeech from "./text-speech.png";
 import connectr1 from "./connectr1.png";
 import connectr2 from "./connectr2.png";
 import tododjango from "./Todo-django.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -54,12 +55,23 @@ const Projects = () => {
               >
                 Drawing Web App
               </h3>
-              <img
-                src={draw}
-                alt="drawing-web-app"
-                className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
-                data-aos="zoom-in"
-              />
+              <div className="project-gallery">
+                <img
+                  src={draw}
+                  alt="drawing-web-app"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://drawing-web-app.web.app/"
+                    target="_blank"
+                    className="preview-link"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </Link>
+                </div>
+              </div>
               <span className="pro-sub-span">
                 <ul data-aos="fade-down">
                   <li>
@@ -122,12 +134,23 @@ const Projects = () => {
               >
                 Movie Rating Web App
               </h3>
-              <img
-                src={movie}
-                alt="joke-app"
-                className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
-                data-aos="zoom-in"
-              />
+              <div className="project-gallery">
+                <img
+                  src={movie}
+                  alt="joke-app"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://movieapp-e69ce.web.app/"
+                    target="_blank"
+                    className="preview-link"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </Link>
+                </div>
+              </div>
               <span className="pro-sub-span">
                 <ul data-aos="fade-down">
                   <li>
@@ -197,20 +220,42 @@ const Projects = () => {
               Social Media Web App
             </h3>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 pb-5">
-              <img
-                src={connectr1}
-                alt="connectr-app"
-                className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
-                data-aos="zoom-in"
-              />
+              <div className="project-gallery">
+                <img
+                  src={connectr1}
+                  alt="connectr-app"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://starchat-in.web.app/"
+                    target="_blank"
+                    className="preview-link"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <img
-                src={connectr2}
-                alt="connectr-app"
-                className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
-                data-aos="zoom-in"
-              />
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 pb-5">
+              <div className="project-gallery">
+                <img
+                  src={connectr2}
+                  alt="connectr-app"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://starchat-in.web.app/"
+                    target="_blank"
+                    className="preview-link"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div className="row pb-5">
@@ -290,9 +335,7 @@ const Projects = () => {
                 </ul>
               </span>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              
-            </div>
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12"></div>
           </div>
         </div>
       </div>

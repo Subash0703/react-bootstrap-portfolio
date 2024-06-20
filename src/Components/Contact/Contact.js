@@ -1,11 +1,72 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import contactimg from "./contimg.jpg";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import axios from "axios";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (formSubmitted) {
+      setTimeout(() => {
+        setName("");
+        setEmail("");
+        setMessage("");
+        setFormSubmitted(false);
+      }, 1000);
+    }
+  }, [formSubmitted]);
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+
+    console.log(name);
+    console.log(email);
+    console.log(message);
+
+    localStorage.setItem(
+      "Contact-Form",
+      JSON.stringify({ name, email, message })
+    );
+
+    try {
+      const data = {
+        records: [
+          {
+            fields: {
+              Name: name,
+              Email: email,
+              Message: message,
+            },
+          },
+        ],
+      };
+      console.log(data, "data");
+      const response = await axios.post(
+        "https://api.airtable.com/v0/app0WwwNWho7wSOY4/tblaHRGvseV0366Tq",
+        data,
+        {
+          headers: {
+            Authorization:
+              "Bearer patU5SCtgiOdH0OeQ.ac2fae98e1ddab3a07a865ecc2cf6030b0b2fd665eba2aa794846858081b6802",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(response, "response");
+      console.log("Form submitted successfully:", response.data);
+      setFormSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+    }
+  };
+
   return (
     <>
       <div className="container-fluid">
@@ -38,7 +99,7 @@ const Contact = () => {
           </div>
           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5 p-5">
             <div className="cont-form" data-aos="fade-up">
-              <form className="form">
+              <form className="form" onSubmit={submitForm}>
                 <div className="form-group col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
                   <label htmlFor="name">Name : </label>
                   <input
@@ -46,6 +107,8 @@ const Contact = () => {
                     className="form-control p-3"
                     id="name"
                     placeholder="Enter Your Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div className="form-group col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
@@ -55,6 +118,8 @@ const Contact = () => {
                     className="form-control p-3"
                     id="email"
                     placeholder="Enter Your Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="form-group col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
@@ -64,6 +129,8 @@ const Contact = () => {
                     id="message"
                     rows="4"
                     placeholder="Enter Your Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
                 <button
@@ -72,6 +139,7 @@ const Contact = () => {
                 >
                   Submit
                 </button>
+                {formSubmitted && <p>Form Submitted Successfully!</p>}
               </form>
             </div>
           </div>
@@ -80,8 +148,8 @@ const Contact = () => {
               <img
                 src={contactimg}
                 alt="Contact-img"
-                data-aos="zoom-out"
-                className="cont-img col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                data-aos="zoom-in"
+                className="cont-img col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 img-fluid"
               />
             </div>
           </div>
@@ -96,7 +164,7 @@ const Contact = () => {
                     data-aos-duration="3000"
                     className="social-info-icon text-decoration-none"
                     target="_blank"
-                    to="https://www.linkedin.com/in/subash-s-805626273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    to="https://linkedin.com/in/subash-shenbagarajan"
                   >
                     {" "}
                     <FaLinkedin />
@@ -115,10 +183,18 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-5">
-              <h3 className="cont-social-head" data-aos="fade-up">Email : </h3>
-              <p className="mb-5 cont-social-para" data-aos="fade-down">Subashrajan2003@gmail.com</p>
-              <h3 className="cont-social-head" data-aos="fade-up">Phone Number : </h3>
-              <p className="cont-social-para" data-aos="fade-down">+91-9047629145</p>
+              <h3 className="cont-social-head" data-aos="fade-up">
+                Email :{" "}
+              </h3>
+              <p className="mb-5 cont-social-para" data-aos="fade-down">
+                subashrajan2003@gmail.com
+              </p>
+              <h3 className="cont-social-head" data-aos="fade-up">
+                Phone Number :{" "}
+              </h3>
+              <p className="cont-social-para" data-aos="fade-down">
+                +91-9047629145
+              </p>
             </div>
           </div>
         </div>
