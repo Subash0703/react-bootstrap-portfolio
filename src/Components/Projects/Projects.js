@@ -7,6 +7,7 @@ import textspeech from "./text-speech.png";
 import connectr1 from "./connectr1.png";
 import connectr2 from "./connectr2.png";
 import tododjango from "./Todo-django.png";
+import sms from "./sms.png";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -66,9 +67,12 @@ const Projects = () => {
                   <Link
                     to="https://drawing-web-app.web.app/"
                     target="_blank"
-                    className="preview-link"
+                    className="preview-link text-decoration-none"
                   >
                     <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -97,12 +101,26 @@ const Projects = () => {
               >
                 Random Joke Generator
               </h3>
-              <img
-                src={joke}
-                alt="joke-app"
-                className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
-                data-aos="zoom-in"
-              />
+              <div className="project-gallery">
+                <img
+                  src={joke}
+                  alt="joke-app"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://github.com/Subash0703/Random-Joke-Generator"
+                    target="_blank"
+                    className="preview-link text-decoration-none"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
+                  </Link>
+                </div>
+              </div>
               <span className="pro-sub-span">
                 <ul data-aos="fade-down">
                   <li>
@@ -145,9 +163,12 @@ const Projects = () => {
                   <Link
                     to="https://movieapp-e69ce.web.app/"
                     target="_blank"
-                    className="preview-link"
+                    className="preview-link text-decoration-none"
                   >
                     <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -181,12 +202,26 @@ const Projects = () => {
               >
                 Text to Speech Converter
               </h3>
-              <img
-                src={textspeech}
-                alt="joke-app"
-                className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
-                data-aos="zoom-in"
-              />
+              <div className="project-gallery">
+                <img
+                  src={textspeech}
+                  alt="joke-app"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://github.com/Subash0703/Text-to-Speech-Javascript"
+                    target="_blank"
+                    className="preview-link text-decoration-none"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
+                  </Link>
+                </div>
+              </div>
               <span className="pro-sub-span">
                 <ul data-aos="fade-down">
                   <li>
@@ -231,9 +266,12 @@ const Projects = () => {
                   <Link
                     to="https://starchat-in.web.app/"
                     target="_blank"
-                    className="preview-link"
+                    className="preview-link text-decoration-none"
                   >
                     <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -250,9 +288,12 @@ const Projects = () => {
                   <Link
                     to="https://starchat-in.web.app/"
                     target="_blank"
-                    className="preview-link"
+                    className="preview-link text-decoration-none"
                   >
                     <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -299,12 +340,26 @@ const Projects = () => {
               >
                 Todo list - Django
               </h3>
-              <img
-                src={tododjango}
-                alt="tododjango"
-                className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
-                data-aos="zoom-in"
-              />
+              <div className="project-gallery">
+                <img
+                  src={tododjango}
+                  alt="tododjango"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://github.com/Subash0703/todolist-django"
+                    target="_blank"
+                    className="preview-link text-decoration-none"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
+                  </Link>
+                </div>
+              </div>
               <span className="pro-sub-span">
                 <ul data-aos="fade-down">
                   <li>
@@ -335,7 +390,63 @@ const Projects = () => {
                 </ul>
               </span>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12"></div>
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <h3
+                className="h3 pb-2 pro-sub-title text-center"
+                data-aos="fade-up"
+              >
+                School Management System - Django + React
+              </h3>
+              <div className="project-gallery">
+                <img
+                  src={sms}
+                  alt="tododjango"
+                  className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-sub-img"
+                  data-aos="zoom-in"
+                />
+                <div className="project-gallery-links d-flex justify-content-center align-items-center">
+                  <Link
+                    to="https://github.com/Subash0703/School-management-system-Django-Backend"
+                    target="_blank"
+                    className="preview-link text-decoration-none"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <span className="preview-text ms-2 fs-4">
+                      Code/Live Preview
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <span className="pro-sub-span">
+                <ul data-aos="fade-down">
+                  <li>
+                    Developed a School Management System using ReactJS and
+                    Django with full CRUD operations, enhancing data management
+                    and user interaction.
+                  </li>
+                  <li>
+                    Utilized Bootstrap for a responsive and user-friendly UI,
+                    improving accessibility and user experience.
+                  </li>
+                  <li>
+                    Implemented Django REST Framework to create robust APIs,
+                    enabling efficient data exchange between frontend and
+                    backend.
+                  </li>
+                  <li>
+                    Integrated Axios for smooth and reliable communication
+                    between the frontend and backend, ensuring efficient data
+                    flow.
+                  </li>
+                  <li>
+                    Enhanced administrative efficiency by providing a
+                    comprehensive solution for managing various school
+                    operations, streamlining processes, and improving
+                    productivity
+                  </li>
+                </ul>
+              </span>
+            </div>
           </div>
         </div>
       </div>
