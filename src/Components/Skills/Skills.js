@@ -64,20 +64,20 @@ const Skills = () => {
               </div>
               <div className="row my-3">
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-left"
                 >
                   <img src={html} alt="html" className="skill-set-img" />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-right"
                   data-aos-delay="300"
                 >
                   <img src={css} alt="css" className="skill-set-img" />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-left"
                   data-aos-delay="400"
                 >
@@ -87,10 +87,8 @@ const Skills = () => {
                     className="skill-set-img"
                   />
                 </div>
-              </div>
-              <div className="row my-3">
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-right"
                   data-aos-delay="500"
                 >
@@ -101,46 +99,42 @@ const Skills = () => {
                   />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-right"
                   data-aos-delay="500"
                 >
                   <img src={js} alt="js" className="skill-set-img" />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-left"
                   data-aos-delay="600"
                 >
                   <img src={react} alt="react" className="skill-set-img" />
                 </div>
-              </div>
-              <div className="row my-3">
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-right"
                   data-aos-delay="700"
                 >
                   <img src={python} alt="python" className="skill-set-img" />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-left"
                   data-aos-delay="800"
                 >
                   <img src={django} alt="django" className="skill-set-img" />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-right"
                   data-aos-delay="900"
                 >
                   <img src={oracle} alt="oracle" className="skill-set-img" />
                 </div>
-              </div>
-              <div className="row my-3">
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-left"
                   data-aos-delay="800"
                 >
@@ -151,14 +145,14 @@ const Skills = () => {
                   />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-right"
                   data-aos-delay="900"
                 >
                   <img src={git} alt="git" className="skill-set-img" />
                 </div>
                 <div
-                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6 d-flex justify-content-center align-items-center my-3"
+                  className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center my-3"
                   data-aos="flip-right"
                   data-aos-delay="900"
                 >
