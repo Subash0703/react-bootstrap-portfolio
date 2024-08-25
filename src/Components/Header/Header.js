@@ -2,10 +2,12 @@ import React from "react";
 import "./Header.css";
 // import myimg from "./photo-bg.png";
 import image2 from './Subash_2024_no_bg.png';
+import ParticlesComponent from "../particles";
 
 const Header = () => {
   return (
     <>
+    <ParticlesComponent />
       <section className="container-fluid">
         <div className="intro-cont row">
           <div className="col-xxl-8 col-xl-8 col-lg-12 col-md-6 col-sm-12">

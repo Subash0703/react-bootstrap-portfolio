@@ -2,10 +2,12 @@ import React from "react";
 import "./About.css";
 // import image1 from "./photo-bg.png";
 import image2 from "./linkedin-profile.png";
+import ParticlesComponent from "../particles";
 
 const About = () => {
   return (
     <>
+    <ParticlesComponent />
       <div className="container-fluid">
         <div className="intro-about row">
           <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">

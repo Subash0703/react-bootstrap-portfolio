@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import axios from "axios";
+import ParticlesComponent from "../particles";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -69,9 +70,10 @@ const Contact = () => {
 
   return (
     <>
+    <ParticlesComponent />
       <div className="container-fluid">
         <div className="cont-det row">
-          <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+          <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5">
             <h1
               className="h1 cont-det-head col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
               data-aos="fade-up"

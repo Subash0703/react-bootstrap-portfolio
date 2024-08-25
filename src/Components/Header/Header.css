@@ -3,12 +3,12 @@
     font-family: "DM Serif Display", serif;
 }
 .intro-cont{
-    background-color: #242524 !important;
+    /* background-color: #242524 !important; */
 }
 .intro-desc{
     text-align: justify;
     padding: 8rem 2rem 4rem ;
-    color: #FEf6E6 !important;
+    color: #444444 !important;
     
 }
 @media (max-width: 768px) {
@@ -38,12 +38,17 @@
         align-items: center;
     }
 }
+
 .intro-media{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .media-pic{
-    filter: drop-shadow(10px 10px 40px rgba(247, 244, 244, 0.6)) ;
+    filter: drop-shadow(10px 10px 10px rgba(247, 244, 244, 0.4)) ;
     border-radius: 10px ;
+}
+canvas{
+    z-index: -1;
+    position: absolute;
 }

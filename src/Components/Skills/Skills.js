@@ -12,10 +12,12 @@ import tailwindcss from "./tailwindcss.png";
 import firebase from "./firebase.png";
 import git from "./git.png";
 import github from "./github.png";
+import ParticlesComponent from "../particles";
 
 const Skills = () => {
   return (
     <>
+    <ParticlesComponent />
       <div className="container-fluid">
         <div className="skill-data row">
           <div

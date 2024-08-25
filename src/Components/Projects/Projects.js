@@ -9,10 +9,12 @@ import connectr2 from "./connectr2.png";
 import tododjango from "./Todo-django.png";
 import sms from "./sms.png";
 import { Link } from "react-router-dom";
+import ParticlesComponent from "../particles";
 
 const Projects = () => {
   return (
     <>
+    <ParticlesComponent />
       <div className="container-fluid">
         <div className="row">
           <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 pro-cont pb-5">
